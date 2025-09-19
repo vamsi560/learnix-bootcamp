@@ -1,0 +1,164 @@
+
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+    border-radius: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+
+.cta {
+    background: #2a2c39;
+    padding: 80px 0;
+}
+
+    .cta h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cta p {
+        color: #fff;
+    }
+
+a.deco-none {
+    color: #000;
+    text-decoration: none;
+}
+
+.bannerImage {
+    background-image: url('../images/landingpage/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotronColor {
+    color: #fff !important;
+}
+
+.bannerSection {
+    margin-top: 65px !important;
+}
+
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #212529 !important;
+}
+
+.paddingTop {
+    margin-top: 75px !important;
+}
+
+.paddingTopSpekers {
+    margin-top: 86px !important;
+}
+
+.event {
+    background-image: url('../images/landingpage/event.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+li.borderless {
+    border: 0 none;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.cardHeadheight {
+    height: 97px;
+}
+
+.card-title-container {
+    height: 80px;
+}
+
+.card-speakers-container {
+    height: 75px;
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-track {
+    min-width: 275px !important;
+    max-width: 275px !important;
+}
+
+.world-bg {
+    background-image: url("../images/world_bg_alt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+/*    background-size: cover;*/
+     background-size: cover;
+}
+
+.world-bg-alt {
+    background-image: url("../images/world_bg_alt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    /*background-size: cover;*/
+}
+
+.speaker-image {
+    width: 100px;
+}
+
+.topic-image {
+    width: 70px;
+}
+
+.speaker-image-alt {
+    width: 100px;
+}
+
+.session-start {
+    background-image: url("../images/session_to_start.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}

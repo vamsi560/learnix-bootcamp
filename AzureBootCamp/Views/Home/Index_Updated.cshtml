@@ -1,0 +1,219 @@
+﻿</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.agenda-card').forEach(function(card, i) {
+            setTimeout(function() {
+                card.classList.add('visible');
+            }, 100 + i * 120);
+        });
+    });
+</script>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="background:linear-gradient(135deg, #f8fbf8 0%, #ffffff 100%); min-height:17vh; color:#000; margin-top:-120px;">
+    <div class="bannerImage jumbotron text-center px-2" style="height:650px; background:linear-gradient(135deg, #00214d 0%, #006aff 100%); background-size:cover; background-position:center; position:relative; color:#fff; overflow:hidden;">
+        <div class="jumbotronColor" style="margin-top:-90px; color:#00214d;">
+            <h1 class="jumbotron-heading boldFont" style="text-shadow:2px 2px 4px rgba(0,0,0,0.3); font-size:3.5rem; margin-bottom:1rem;">Welcome to LearniX Bootcamp 2025</h1>
+            <h1 class="lead jumbotronColor boldFont mb-0" style="color:#FABD00; font-size:1.8rem; text-shadow:1px 1px 2px rgba(0,0,0,0.3);">Hosted By</h1>
+            <h1 class="jumbotron-heading font-weight-bold" style="color:#fff; font-size:3rem; text-shadow:2px 2px 4px rgba(0,0,0,0.3); margin-bottom:2rem;">ValueMomentum</h1>
+            <div class="m-1" style="margin-bottom: 0.5rem!important; color:#fff; background:rgba(255,255,255,0.1); padding:1.5rem; border-radius:15px; backdrop-filter:blur(10px);">
+                <h4><i class="fas fa-calendar-day" aria-hidden="true"></i> Saturday,  October 11th 2025</h4>
+                <h4><i class="fas fa-clock" aria-hidden="true"></i> 10:00 AM  - 02:00 PM (IST)</h4>
+                <br />
+            </div>
+            <div class="my-4 d-flex justify-content-center">
+                <button class="btn btn-yellow btn-lg shadow" style="font-size:1.5rem; color:#212529; margin-bottom:24px;" onclick="window.open('https://dummyurl.com/register','_blank')" type="button">Register Now</button>
+            </div>
+            <div class="address-section" style="background:rgba(255,255,255,0.95); margin-top:16px; padding:24px; border-radius:20px; max-width:600px; margin-left:auto; margin-right:auto; color:#000; box-shadow:0 8px 32px rgba(0,0,0,0.1); backdrop-filter:blur(10px);">
+                <div class='venue' style="font-size: 30px; color:#FABD00;">Venue</div>
+                <p style="margin-bottom:0rem;">ValueMomentum Software Services Private Limited,</p>
+                <p style="margin-bottom:0rem;">Plot No 36 & 37, Gachibowli, Financial District, Nanakramguda, Hyderabad, Telangana 500032</p>
+                <i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/HHipqH2cfiiLpw7e9" style="color:#FABD00 ;margin-left:5px">Click here for location</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scan and Refer Section -->
+    <div style="height:32px;"></div>
+    <div class="container my-5 py-4" style="background:linear-gradient(135deg, #f8fbf8 0%, #ffffff 100%); border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1); max-width:600px; color:#000; border:1px solid rgba(0,107,255,0.1);">
+    <h3 class="text-center mb-3" style="color:#006aff; font-weight:600; font-size:1.8rem;">Scan and refer to apply</h3>
+        <div class="d-flex justify-content-center">
+            <div style="width:160px; height:160px; background:#f8fbf8; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#000;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=dummy" alt="QR Code" style="width:140px; height:140px;" />
+            </div>
+        </div>
+    </div>
+
+    <section class="p-3" style="background:#fff; color:#000;">
+        <div class="container">
+            <h1 class="text-center mb-5" style="padding:0.5rem 0; border-radius:8px; color:#006aff;">Why attend?</h1>
+            <p>
+                The 3rd Edition of LearniX Bootcamp isn't just another program — it's your launchpad to next-gen expertise, experiential learning, and real-world impact. Driven by our Technology Solutions Center (TSC) initiatives, it prepares you to thrive in the fast-changing world of technology.
+            </p>
+        </div>
+    </section>
+
+    <div class="album py-5" style="background:linear-gradient(135deg, #f8fbf8 0%, #e8f4f8 100%); color:#000;">
+        <div class="container">
+            <h1 class="text-center mb-5" style="padding:1rem 0; border-radius:15px; color:#006aff; font-weight:700;">What to expect?<div style="width:80px; height:4px; background:linear-gradient(90deg, #006aff, #FABD00); margin:1rem auto; border-radius:2px;"></div></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #006aff, #0056cc); color:#fff; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,107,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-brain" style="font-size:24px; color:#FABD00;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Deep Dive into Emerging Tech</h5>
+                            <p class="card-text">Learn cutting-edge concepts like Agentic AI, Cloud Engineering, and Modern App Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #FABD00, #FFD700); color:#000; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(250,189,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(0,0,0,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-hands-helping" style="font-size:24px; color:#006aff;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Hands-on Experience</h5>
+                            <p class="card-text">Go beyond theory with practical demos, use cases, and problem-solving sessions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #00214d, #003366); color:#fff; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,33,77,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-users" style="font-size:24px; color:#FABD00;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Panel Discussion</h5>
+                            <p class="card-text">Engage with leaders on "Engineering with GenAI: Key Hurdles and Solutions"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #28a745, #20c997); color:#fff; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(40,167,69,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-chart-line" style="font-size:24px; color:#FABD00;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Career Growth</h5>
+                            <p class="card-text">Discover how technologies shape roles and align your skills for future opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #dc3545, #e74c3c); color:#fff; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(220,53,69,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-lightbulb" style="font-size:24px; color:#FABD00;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Expert Insights</h5>
+                            <p class="card-text">Hear from speakers at Microsoft, AWS and internal leaders sharing adoption stories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" style="background:linear-gradient(135deg, #6f42c1, #8e44ad); color:#fff; border:none; border-radius:20px; transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(111,66,193,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'">
+                        <div class="card-body text-center p-4">
+                            <div style="width:60px; height:60px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;"><i class="fas fa-handshake" style="font-size:24px; color:#FABD00;"></i></div>
+                            <h5 class="card-title font-weight-bold mb-3">Collaborative Learning</h5>
+                            <p class="card-text">Connect with peers, mentors, and leaders to exchange ideas and co-create solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-2" style="background:#fff; color:#000;">
+        <div class="container">
+            <h1 class="text-center mt-5 mb-4" style="padding:1rem 0; border-radius:15px; color:#006aff; font-weight:700;">Agenda & Speakers<div style="width:80px; height:4px; background:linear-gradient(90deg, #006aff, #FABD00); margin:1rem auto; border-radius:2px;"></div></h1>
+            <div class="row justify-content-center" style="color:#000;">
+                <!-- Speaker Card Example -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#006aff; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Saikishore Tayi.jpg" alt="Saikishore Tayi" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Saikishore Tayi</h5>
+                            <p class="card-text mb-1">Keynote Speaker</p>
+                            <p class="card-text text-muted">Re-engineering the SDLC with AI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#006aff; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Sawrav Roy.jpg" alt="Microsoft Speaker" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Sawrav Roy</h5>
+                            <p class="card-text mb-1">Guest Speaker</p>
+                            <p class="card-text text-muted">Vibe Coding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#006aff; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Sourav Das Biswas.jpg" alt="AWS Speaker" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Sourav Das Biswas</h5>
+                            <p class="card-text mb-1">Guest Speaker</p>
+                            <p class="card-text text-muted">Building solution using Amazon Bedrock</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#00214d; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Kapil Daga.jpg" alt="Kapil Daga" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Kapil Daga</h5>
+                            <p class="card-text mb-1">Panelist</p>
+                            <p class="card-text text-muted">Engineering with GenAI: Key Hurdles and Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#00214d; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Sudeep Karnavat.jpg" alt="Sudeep Karnavat" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Sudeep Karnavat</h5>
+                            <p class="card-text mb-1">Panelist</p>
+                            <p class="card-text text-muted">Engineering with GenAI: Key Hurdles and Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#00214d; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Prasad Guntupalli.jpg" alt="Prasad Guntupalli" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Prasad Guntupalli</h5>
+                            <p class="card-text mb-1">Panelist</p>
+                            <p class="card-text text-muted">Engineering with GenAI: Key Hurdles and Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more speaker cards as needed -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm agenda-card" style="background:#00214d; color:#fff;">
+                        <div class="card-body text-center" style="color:#fff;">
+                            <img src="~/images/speakers/Dibyendu Saha.jpg" alt="Dibyendu Saha" class="rounded-circle mb-3" style="width:100px;height:100px;object-fit:cover;">
+                            <h5 class="card-title font-weight-bold">Dibyendu Saha</h5>
+                            <p class="card-text mb-1">Panel Moderator</p>
+                            <p class="card-text text-muted">Panel Discussion led by Dibyendu Saha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 event" style="background:#f8fbf8; color:#000;">
+        <div class="py-5 container text-center" style="color:#000;">
+            <h3 class="mb-4"><u>Event Date</u></h3>
+            <h4><i class="fas fa-calendar-day" aria-hidden="true"></i> Saturday,  October 11th 2025</h4>
+            <h4><i class="fas fa-clock" aria-hidden="true"></i> 10:00 AM  - 02:00 PM (IST)</h4>
+            @*<h5><i class="fas fa-clock" aria-hidden="true"></i> 10:00 AM - 01:00 PM (EST)</h5>*@
+            <br />
+            <div class="my-4 d-flex justify-content-center">
+                <button class="btn btn-yellow btn-lg shadow" style="font-size:1.5rem; color:#212529; margin-bottom:24px;" onclick="window.open('https://dummyurl.com/register','_blank')" type="button">Register Now</button>
+            </div>
+            <div class="address" style ="margin-top:23px">
+                <div class='venue' style="font-size: 30px;">Venue</div>
+                <p style="margin-bottom:0rem">ValueMomentum Software Services Private Limited,</p>
+                <p style="margin-bottom:0rem"> Plot No 36 & 37, Gachibowli, Financial District, Nanakramguda, Hyderabad, Telangana 500032</p>
+                <i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/HHipqH2cfiiLpw7e9" style="color:#FABD00 ;margin-left:5px">Click here for location</a>
+            </div>
+        </div>
+    </div>
+</div>

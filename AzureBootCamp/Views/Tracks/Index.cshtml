@@ -1,0 +1,113 @@
+﻿<div class="py-2">
+    <div class="text-center py-3">
+        <h3>LearniX Bootcamp 2025</h3>
+
+    //@*@if (TempData.Peek("Name") == null)*@
+            @*{<a class="btn btn-danger btn-sm" type="submit" asp-controller="Home" asp-action="NavigateRegister">Register Now</a> <a class="btn btn-primary btn-sm" type="button" asp-controller="Home" asp-action="NavigateLogin">Login</a>}*@
+            <a class="btn btn-danger " href="https://resources.valuemomentum.com/registration-page-global-azure-2022" role="button" target="_blank">Register Now</a>
+
+    </div>
+    <div class="container text-center" id="myList" role="tablist">
+        <ul class="nav nav-tabs d-flex justify-content-center">
+            //@foreach (var track in ((IEnumerable<AzureBootCamp.Context.Track>)TempData["Tracks"]))
+            {
+            <li class="nav-item">
+                //@if (track.TrackName.ToLower() == "india")
+                {
+                    <!--<a class="nav-link active" data-bs-toggle="list" href="#track_@(track.TrackId)" role="tab">@(track.TrackName)</a>-->
+                }
+                else
+                {
+                    <!--<a class="nav-link" data-bs-toggle="list" href="#track_@(track.TrackId)" role="tab">@(track.TrackName)</a>-->
+                }
+            </li>
+            }
+        </ul>
+    </div>
+    <div class="container-fluid pb-3">
+        <div class="tab-content">
+            //@foreach (var track in ((IEnumerable<AzureBootCamp.Context.Track>)TempData["Tracks"]))
+            {
+                if (track.TrackName.ToLower() == "india")
+                {
+                    <div class="tab-pane active" id="track_@track.TrackId" role="tabpanel">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            @foreach (var topic in track.Topics)
+                            {
+                                <a href="/Sessions/SessionInfo/@topic.TopicId" class="deco-none">
+                                    <div class="card m-2 card-track p-0">
+                                        <img src="~/images/tracks/@(topic.TopicImage)" class="card-img-top" alt="...">
+                                        <div class="card-body text-center">
+                                            <div class="">
+                                                <h6 class="card-title text-uppercase">@(topic.TopicName)</h6>
+                                            </div>
+                                            <hr />
+                                            <div class="">
+                                                <p class="card-text text-muted">Speaker</p>
+                                                @foreach (var topicspeaker in topic.TopicSpeakers)
+                                                {
+                                                     <div class="d-inline-block justify-content-center">
+                                                         <img src="~/images/speakers/@topicspeaker.Speaker.SpeakerImage" class="speaker-image rounded-circle" alt="@topicspeaker.Speaker.SpeakerName" title="@topicspeaker.Speaker.SpeakerName" />
+                                                         <br />
+                                                         <span class="text-muted mx-1 p-0 align-self-center">@topicspeaker.Speaker.SpeakerName.Split(' ')[0]</span>
+                                                     </div>
+                                                }
+                                            </div>
+                                            <hr />
+                                            <div>
+                                                <i class="fas fa-calendar-day" aria-hidden="true"></i> <span>@topic.TopicTime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="tab-pane" id="track_@track.TrackId" role="tabpanel">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            @foreach (var topic in track.Topics)
+                            {
+                                <a href="/Sessions/SessionInfo/@topic.TopicId" class="deco-none">
+                                    <div class="card m-2 card-track p-0">
+                                        <img src="~/images/tracks/@(topic.TopicImage)" class="card-img-top" alt="...">
+                                        <div class="card-body text-center">
+                                            <div class="card-title-container">
+                                                <h6 class="card-title text-uppercase">@(topic.TopicName)</h6>
+                                            </div>
+                                            <hr />
+                                            <div class="">
+                                                @if(topic.TopicSpeakers.Count>1)
+                                                { 
+                                                    <p class="card-text text-muted">Speakers</p>
+                                                }
+                                                else
+                                                { 
+                                                    <p class="card-text text-muted">Speaker</p>
+                                                }
+                                                @foreach (var topicspeaker in topic.TopicSpeakers)
+                                                {
+                                                    <div class="d-inline-block justify-content-center">
+                                                        <img src="~/images/speakers/@topicspeaker.Speaker.SpeakerImage" class="speaker-image-alt rounded-circle" alt="@topicspeaker.Speaker.SpeakerName" title="@topicspeaker.Speaker.SpeakerName" />
+                                                        <br />
+                                                        <span class="text-muted mx-1 p-0 align-self-center">@topicspeaker.Speaker.SpeakerName.Split(' ')[0]</span>
+                                                    </div>
+                                                }
+                                            </div>
+                                            <hr />
+                                            <div>
+                                                <i class="fas fa-calendar-day" aria-hidden="true"></i> <span>@topic.TopicTime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                }
+            }        
+        </div>
+    </div>
+</div>

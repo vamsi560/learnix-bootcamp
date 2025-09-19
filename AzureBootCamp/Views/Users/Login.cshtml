@@ -1,0 +1,37 @@
+﻿@* @model AzureBootCamp.Models.LoginUser *@
+
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="container py-2">
+    <h3 class="text-center">User Login</h3>
+    <hr />
+    <div class="d-flex justify-content-center row">
+        <div class="col-sm-12 col-md-4">
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group m-1">
+                    <label for="email" class="control-label m-1">Email <span class="text-danger">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" />
+                </div>
+                <div class="form-group m-1">
+                    <label for="password" class="control-label m-1">Password <span class="text-danger">*</span></label>
+                    <input maxlength="15" type="password" id="password" name="password" class="form-control" />
+                </div>
+                <div class="form-group d-flex justify-content-between m-1">
+                    <div class=" m-1">
+                        <a class="btn btn-link" asp-controller="Users" asp-action="Reset">Forgot Password</a>
+                    </div>
+                    <div class=" m-1">
+                        <input type="submit" value="Login" class="btn btn-primary" />
+                        <a class="btn btn-link" asp-action="Register">Register</a>
+                    </div>
+                </div>
+                <div class=" m-1">
+                    <a class="btn btn-link" href="/">Back</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

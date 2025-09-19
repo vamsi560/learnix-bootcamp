@@ -1,0 +1,30 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container text-center py-3">
+    <h4 class="text-danger text-center">Error:</h4>
+    //@if(TempData["Error"]==null){
+    <h5 class="text-danger text-center">Unexpected error. Please navigate to home page</h5>
+    }
+    else{
+    <!--<h5 class="text-danger text-center">@TempData["Error"]</h5>-->
+    }
+    <a class="btn btn-link" href="/">Home</a>
+    //@if (TempData["errorCode"] != null && TempData["errorCode"].ToString().ToLower() == "register")
+    {
+    <!--<a class="btn btn-link" asp-action="Register" asp-controller="Users">Register</a>-->
+    <!--<a class="btn btn-link" asp-action="Login" asp-controller="Users">Login</a>-->
+    }
+    //else if (TempData["errorCode"] != null && TempData["errorCode"].ToString().ToLower() == "login")
+    {
+    <!--<a class="btn btn-link" asp-action="Login" asp-controller="Users">Login</a>-->
+    <!--<a class="btn btn-link" asp-action="Reset" asp-controller="Users">Forgot Password</a>-->
+    }
+    //else if (TempData["errorCode"] != null && TempData["errorCode"].ToString().ToLower() == "registration")
+    {
+    <!--<a class="btn btn-link" asp-action="Login" asp-controller="Users">Login</a>-->
+    <!--<a class="btn btn-link" asp-action="Reset" asp-controller="Users">Forgot Password</a>-->
+    }
+</div>

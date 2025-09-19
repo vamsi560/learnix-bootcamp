@@ -1,0 +1,58 @@
+﻿@* @model AzureBootCamp.Models.SessionModel *@
+<div class="text-center world-bg-alt text-white py-5">
+    <div class="container py-5">
+    <!--<h3>@Model.Topic.TopicName</h3>-->
+    <!--<p><i class="fas fa-calendar-day" aria-hidden="true"></i> @Model.Topic.TopicTime</p>-->
+    </div>
+    <div class="container text-center">
+        <a class="btn btn-outline-light" asp-action="Index" asp-controller="Home">Back</a>
+    </div>
+</div>
+
+<div class="album py-5 bg-light mb-3">
+    <div class="container" style="background:#303030; color:#fff;">
+        <h3>About the session</h3>
+        <p>
+          <!--<h4>@Model.Topic.TopicName<br /></h4>-->
+            //@Model.Topic.TopicDescription
+        </p>
+    </div>
+</div>
+
+<div class="container pb-3">
+    <h3>Speakers</h3>
+    <hr />
+    //@foreach (var topicspeaker in Model.Topic.TopicSpeakers)
+    {
+        <div class="d-flex flex-column pb-5">
+            <div class="d-flex flex-row">
+                <!--<img src="~/images/speakers/@topicspeaker.Speaker.SpeakerImage" class="speaker-image rounded-circle" />-->
+                <div class="d-flex flex-column mx-2 align-self-center">
+                    <p class="m-0 p-0"><b>@topicspeaker.Speaker.SpeakerName</b></p>
+                    <p class="m-0 p-0 text-muted">@topicspeaker.Speaker.SpeakerDesignation</p>
+                </div>
+            </div>
+            <div class="m-2">
+                <p>@topicspeaker.Speaker.SpeakerBio</p>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="sessionVideo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-white bg-danger">
+                <h5 class="modal-title" id="exampleModalLabel">Session</h5>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h5>Event starts at</h5>
+                <h6>2021 April 15 10:00 AM - 01:00 PM(EST)</h6>
+                <h6>2021 April 17 10:00 AM - 01:00 PM(IST)</h6>
+            </div>
+        </div>
+    </div>
+</div>
