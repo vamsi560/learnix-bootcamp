@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JA20XYaxTpk=",
+  "dgSpecHash": "WZSqSyKaic4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\backofficeuser\\Music\\AzureBootCamp 05052023 5\\AzureBootCamp\\AzureBootCamp\\AzureBootCamp.csproj",
+  "projectFilePath": "C:\\Users\\backofficeuser\\Documents\\GitHub\\learnix-bootcamp\\AzureBootCamp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\backofficeuser\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\backofficeuser\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
