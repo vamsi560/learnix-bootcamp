@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzureBootCamp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78501714002e51e578f9659d350c569faffdd030")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24b0859cca9762ef31f75e896d5d8ecc6586be8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzureBootCamp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzureBootCamp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
